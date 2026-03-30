@@ -1,0 +1,11 @@
+{
+  "name": "fleet_agent",
+  "description": "Manages fleet resources and maintenance",
+  "version": "1.0.0",
+  "capabilities": [
+    "vehicle_management",
+    "maintenance_scheduling",
+    "resource_allocation"
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "routing_agent",
+  "description": "Optimizes routes and handles navigation",
+  "version": "1.0.0",
+  "capabilities": [
+    "route_optimization",
+    "traffic_analysis",
+    "eta_calculation"
+  ],
+  "dependencies": [
+    "fleet_agent"
+  ]
+}

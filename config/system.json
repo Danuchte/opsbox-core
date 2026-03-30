@@ -1,0 +1,33 @@
+{
+  "system_name": "OPSBOX",
+  "version": "1.0.0",
+  "environment": "development",
+  "agents": {
+    "dispatch": {
+      "enabled": true,
+      "priority": 1
+    },
+    "routing": {
+      "enabled": true,
+      "priority": 2
+    },
+    "fleet": {
+      "enabled": true,
+      "priority": 1
+    },
+    "supervisor": {
+      "enabled": true,
+      "priority": 0
+    }
+  },
+  "services": {
+    "data_storage": {
+      "type": "local",
+      "path": "/root/.openclaw/workspace/opsbox-core/data"
+    },
+    "logging": {
+      "level": "info",
+      "path": "/root/.openclaw/workspace/opsbox-core/data/logs"
+    }
+  }
+}

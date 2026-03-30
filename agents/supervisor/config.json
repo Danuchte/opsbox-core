@@ -1,0 +1,16 @@
+{
+  "name": "supervisor_agent",
+  "description": "Oversees system operations and coordinates agents",
+  "version": "1.0.0",
+  "capabilities": [
+    "system_monitoring",
+    "agent_coordination",
+    "incident_management",
+    "performance_analysis"
+  ],
+  "dependencies": [
+    "dispatch_agent",
+    "routing_agent",
+    "fleet_agent"
+  ]
+}

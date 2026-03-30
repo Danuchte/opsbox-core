@@ -1,0 +1,14 @@
+{
+  "name": "dispatch_agent",
+  "description": "Manages order dispatching and assignment",
+  "version": "1.0.0",
+  "capabilities": [
+    "order_management",
+    "driver_assignment",
+    "real_time_tracking"
+  ],
+  "dependencies": [
+    "fleet_agent",
+    "routing_agent"
+  ]
+}
