@@ -1,0 +1,49 @@
+{
+  "system": {
+    "name": "OpsBox Core",
+    "version": "0.1.0",
+    "environment": "development"
+  },
+  "agents": {
+    "dispatch": {
+      "model": "openrouter/anthropic/claude-3.5-sonnet",
+      "maxConcurrent": 5,
+      "priority": "high"
+    },
+    "routing": {
+      "model": "openrouter/anthropic/claude-3.5-sonnet",
+      "maxConcurrent": 3,
+      "priority": "high"
+    },
+    "fleet": {
+      "model": "openrouter/anthropic/claude-3.5-sonnet",
+      "maxConcurrent": 2,
+      "priority": "medium"
+    },
+    "supervisor": {
+      "model": "openrouter/anthropic/claude-3.5-sonnet",
+      "maxConcurrent": 1,
+      "priority": "highest"
+    }
+  },
+  "services": {
+    "api": {
+      "port": 3000,
+      "host": "localhost",
+      "cors": true
+    },
+    "database": {
+      "type": "postgresql",
+      "host": "localhost",
+      "port": 5432
+    },
+    "communication": {
+      "websocket": true,
+      "redis": true
+    },
+    "tracking": {
+      "interval": 30,
+      "retention": "7d"
+    }
+  }
+}
